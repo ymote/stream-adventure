@@ -4,12 +4,12 @@
   var server = http.createServer(function (req, res) {
       if (req.method === 'POST') {
           req.pipe(through(function (buf, _, next) {
-	      // enter your code here
+	      // enter your code below
               
               next();
           })).pipe(res);
       }
       else res.end('send me a POST\n');
   });
-  server.listen(8000);
+  server.listen(parseInt(process.argv[2]));
 
