@@ -1,5 +1,6 @@
 #!/bin/sh
 
+npm link strip-ansi
 npm link through2
 npm link split
 npm link split
@@ -12,7 +13,6 @@ npm link websocket-stream
 npm link duplexer2
 npm link stream-combiner
 npm link strip
-npm link zlib
 npm link crypto
 npm link tar
 
