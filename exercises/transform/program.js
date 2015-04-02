@@ -1,9 +1,10 @@
 
   var through = require('through2');
   var tr = through(function (buf, _, next) {
-      this.push(buf.toString().toUpperCase());
+      // enter your code below
+      
       next();
   });
 
-  // enter your code below
+  process.stdin.pipe(tr).pipe(process.stdout);
 
