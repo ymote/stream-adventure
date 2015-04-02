@@ -1,4 +1,9 @@
 
 var concat = require('concat-stream');
   
-// enter your code below
+process.stdin.pipe(concat(function (src) {
+    // enter your code below
+
+    console.log(s);
+}));
+
